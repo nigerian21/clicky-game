@@ -1,21 +1,13 @@
-import React from 'react';
-import "./style.css";
+import React from "react";
 
-const Card = props => (
-	<header 
-		className="header"
-		onClick={() => props.setClicked(props.id)}>
-	    <div className="imgContainer">
-	      <img
-	      	className="img"
-	        alt={props.name}
-	        src={props.image}
-	      />
-	    </div>
-	    <div className="content">	
-	    	{props.name}
-	    </div>
-  </div>
-);
+function Alert(props) {
+  console.log(props);
 
-export default Card;
+  return (
+    <div className={`alert alert-${props.type || "success"}`} role="alert">
+      {props.children}
+    </div>
+  );
+}
+
+export default Alert;
