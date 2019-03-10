@@ -9,7 +9,7 @@ class App extends Component {
         Score =
         </header>
       <h1>
-        Clicky Game 
+        Clicky Game: Boondocks edition
         <p></p>
         Instructions: Click on an image to earn points, but don't click on any more than once!
       </h1>
@@ -40,6 +40,3 @@ export default App;
 
 const maxscore = 10;
 const startingScore = 0;
-if startingScore = maxscore (
-  alert "You Won!"
-);
