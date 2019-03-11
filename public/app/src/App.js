@@ -4,9 +4,13 @@ import header from "./components/header.js"
 class App extends Component {
   render() {
     return (
+      state = {
+        startingScore: 0,
+        maxscore: 11,
+      },
       <div className="App">
         <header className="click header">
-        Score =
+        Score ={this.state.startingScore}
         </header>
       <h1>
         Clicky Game: Boondocks edition
@@ -37,6 +41,3 @@ class App extends Component {
 }
 
 export default App;
-
-const maxscore = 10;
-const startingScore = 0;
